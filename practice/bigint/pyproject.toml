@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "course-bigint"
+version = "0.1.0"
+description = "Домашка к лекции «1-int»: упрощённый аналог PyLong — int произвольной точности"
+readme = "README.md"
+authors = ["sobolevn <mail@gmail.com>"]
+packages = [{ include = "bigint" }]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.15"
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=8"
+
+[build-system]
+requires = ["poetry-core>=1.8"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

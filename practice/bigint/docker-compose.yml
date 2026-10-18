@@ -1,0 +1,7 @@
+services:
+  test:
+    build: .
+    command: ["python", "-m", "pytest", "-v"]
+    # Для разработки можно расшарить исходники из локальной папки:
+    # volumes:
+    #   - .:/app
